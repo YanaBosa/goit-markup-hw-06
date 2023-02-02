@@ -391,7 +391,8 @@ img {
   max-width: 264px;
 }
 
-.footer-soc-text, .input-footer-text {
+.footer-soc-text,
+.input-footer-text {
   font-weight: 500;
   font-size: var(--text-font-size);
   line-height: var(--text-lh);
@@ -424,9 +425,6 @@ img {
   background: #31d0aa;
 }
 .input-footer-wrap {
-  
- 
-  
 }
 .input-footer-text {
 }
@@ -434,10 +432,10 @@ img {
   width: 264px;
   height: 40px;
   font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-background-color: #2E2F42;
-padding-left: 16px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  background-color: #2e2f42;
+  padding-left: 16px;
 }
 .footer-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -446,28 +444,25 @@ padding-left: 16px;
   display: flex;
   align-items: center;
   font-weight: 500;
-font-size: var(--text-font-size);
-line-height: var(--text-lh);
-text-align: center;
-letter-spacing: 0.04em;
-color: #FFFFFF;
+  font-size: var(--text-font-size);
+  line-height: var(--text-lh);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   width: 165px;
   height: 40px;
-  background: #4D5AE5;
-border-radius: 4px;
-padding: 8px 24px;
+  background: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
 }
 .footer-input-icon {
   position: absolute;
   top: 0;
   right: 24px;
-  fill: #FFFFFF;
-
+  fill: #ffffff;
 }
 .button-wrap {
   position: relative;
- 
-
 }
 
 /*------------------ Portfolio------------------ */
@@ -651,7 +646,8 @@ padding: 8px 24px;
   padding-left: 38px;
 }
 
-.modal-input:focus, .modal-comment:focus {
+.modal-input:focus,
+.modal-comment:focus {
   border-color: #4d5ae5;
 }
 .modal-input:focus + .modal-input-icon {
@@ -663,7 +659,8 @@ padding: 8px 24px;
   top: 50%;
   transform: translateY(-50%);
 }
-.modal-input::placeholder, .modal-comment::placeholder {
+.modal-input::placeholder,
+.modal-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-comment {
