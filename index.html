@@ -416,6 +416,22 @@
               </li>
             </ul>
           </div>
+          <div class="input-footer-wrap">
+            <p class="input-footer-text">Subscribe</p>
+            <input
+              class="footer-input"
+              name="send-email"
+              type="email"
+              id="send-email"
+              placeholder="E-mail"
+            />
+            <div class="button-wrap">
+              <button class="footer-button" type="submit">Subscribe</button>
+              <svg class="footer-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -428,51 +444,63 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form action="#" class="modal-form">
-          
-          <label for="user-name" class="modal-input-text">Name</label> 
-            <input
-              class="modal-input"
-              name="user-name"
-              type="text"
-              id="user-name"
-              placeholder=""
-              required
-            />
-            <svg class="modal-input-icon"  width="18" height="18">
-              <use href="./images/icons.svg#icon-person-black"></use>
-            </svg>
-          
-          <label for="user-phone" class="modal-input-text"
-            >Phone</label> 
-            <input
-              class="modal-input"
-              name="user-phone"
-              type="tel"
-              id="user-phone"
-              placeholder=""
-              required
-            />
-          
-          <label for="user-email" class="modal-input-text"
-            >Email</label> 
-            <input
-              class="modal-input"
-              name="user-email"
-              type="email"
-              id="user-email"
-              placeholder=""
-            />
-          
-          <label for="user-comment" class="modal-input-text"
-            >Comment</label>
-            <input
-              class="modal-input"
+          <div class="modal-field">
+            <label for="user-name" class="modal-input-text">Name</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                name="user-name"
+                type="text"
+                id="user-name"
+                placeholder=""
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="modal-input-text">Phone</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                name="user-phone"
+                type="tel"
+                id="user-phone"
+                placeholder=""
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-input-text">Email</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                name="user-email"
+                type="email"
+                id="user-email"
+                placeholder=""
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-comment" class="modal-input-text">Comment</label>
+            <textarea
+              class="modal-comment"
               name="user-comment"
-              type="text"
               id="user-comment"
               placeholder="Text input"
-            />
-          
+            ></textarea>
+          </div>
+
           <button type="submit">Send</button>
         </form>
       </div>
