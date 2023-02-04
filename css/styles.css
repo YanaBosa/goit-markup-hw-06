@@ -426,6 +426,8 @@ img {
   background: #31d0aa;
 }
 .input-footer-wrap {
+  display: flex;
+  justify-content: right;
 }
 .input-footer-text {
 }
@@ -435,14 +437,17 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  background-color: #2e2f42;
+  background-color: transparent;
   padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
 }
 .footer-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-button {
-  display: flex;
+  
   align-items: center;
   font-weight: 500;
   font-size: var(--text-font-size);
@@ -461,6 +466,7 @@ img {
   top: 0;
   right: 24px;
   fill: #ffffff;
+  
 }
 .button-wrap {
   position: relative;
@@ -683,6 +689,8 @@ img {
   letter-spacing: 0.04em;
   color: #757575;
   display: flex;
+  align-items: center;
+  position: relative;
 }
 .link-text {
   font-size: 12px;
@@ -692,6 +700,7 @@ img {
   color: #4d5ae5;
   margin-left: 2px;
 }
+
 .check-text span {
   display: flex;
   align-items: center;
@@ -711,23 +720,7 @@ img {
   border: none;
   fill: #f4f4fd;
 }
-/* .check-text::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid #2e2f42;
-  border-radius: 2px;
-  margin-right: 8px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-check:checked + .check-text::before {
-  background-color: #404bbf;
-  border: none;
-  background-image: url(../images/сheck-click.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-} */
+
 .modal-button {
   width: 169px;
   height: 56px;
