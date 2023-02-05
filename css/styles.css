@@ -167,7 +167,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:is(:hover, :focus),
-.modal-button:is(:hover, :focus) {
+.modal-button:is(:hover, :focus),
+.footer-button:is(:hover, :focus) {
   background-color: #404bbf;
 }
 .visually-hidden {
@@ -368,7 +369,8 @@ img {
 }
 .container-footer {
   display: flex;
-  gap: 120px;
+}
+.footer-wrap {
 }
 .footer-link {
   font-family: "Raleway", sans-serif;
@@ -390,6 +392,7 @@ img {
   letter-spacing: 0.02em;
   color: #e7e9fc;
   max-width: 264px;
+  margin-right: 120px;
 }
 
 .footer-soc-text,
@@ -426,10 +429,13 @@ img {
   background: #31d0aa;
 }
 .input-footer-wrap {
-  display: flex;
-  justify-content: right;
+  margin-left: 80px;
 }
 .input-footer-text {
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
 }
 .footer-input {
   width: 264px;
@@ -440,36 +446,45 @@ img {
   background-color: transparent;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input:focus {
+  border-color: #4d5ae5;
 }
 .footer-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-button {
-  
-  align-items: center;
   font-weight: 500;
   font-size: var(--text-font-size);
   line-height: var(--text-lh);
-  text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   width: 165px;
   height: 40px;
   background: #4d5ae5;
   border-radius: 4px;
-  padding: 8px 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  border: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-input-icon {
   position: absolute;
-  top: 0;
-  right: 24px;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #ffffff;
-  
 }
 .button-wrap {
   position: relative;
+  display: flex;
+  gap: 16px;
 }
 
 /*------------------ Portfolio------------------ */
@@ -724,6 +739,7 @@ border-radius: 4px;
 .modal-button {
   width: 169px;
   height: 56px;
+  cursor: pointer;
   padding: 16px 32px;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
