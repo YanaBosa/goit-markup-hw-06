@@ -432,6 +432,7 @@ img {
   margin-left: 80px;
 }
 .input-footer-text {
+  margin-bottom: 16px;
 }
 .footer-form {
   display: flex;
@@ -444,6 +445,7 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   background-color: transparent;
+  color: #fcfcfc;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -635,7 +637,15 @@ img {
   display: block;
   margin-left: auto;
   margin-bottom: 24px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-close:is(:hover, :focus) {
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
 .modal-title {
   font-weight: 500;
   font-size: var(--text-font-size);
@@ -683,6 +693,9 @@ img {
 }
 .modal-input::placeholder,
 .modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-comment {
@@ -744,6 +757,7 @@ img {
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: transparent;
   font-size: var(--text-font-size);
   line-height: var(--text-lh);
   align-items: center;
